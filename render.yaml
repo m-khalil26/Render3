@@ -11,7 +11,7 @@ services:
     rootDir: render3
     envVars:
       -key: DATABASE_URL
-        fromDatabase:
+       fromDatabase:
           name: my_db2
           property: connectionString
     
