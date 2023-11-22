@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: render3
+    runtime: node
+    repo: https://github.com/m-khalil26/Render3
+    region: frankfurt 
+    plan: free 
+    branch: master 
+    rootDir: render3
+
+databases:
+  - name: my_db2
+    region: frankfurt
+    plan: free
+    databaseName: my_db2
+
+
+envVarGroups:
+  - name: stripe
+    envVars:
+      - key: STRIPE_API_URL
+        value: https://api.stripe.com/v2
