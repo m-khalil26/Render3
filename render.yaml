@@ -4,6 +4,8 @@ services:
     runtime: node
     repo: https://github.com/m-khalil26/Render3
     region: frankfurt 
+    buildcommand : npm build
+    startcommand: npm start
     plan: free 
     branch: master 
     rootDir: render3
