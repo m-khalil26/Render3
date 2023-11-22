@@ -15,8 +15,3 @@ databases:
     databaseName: my_db2
 
 
-envVarGroups:
-  - name: stripe
-    envVars:
-      - key: STRIPE_API_URL
-        value: https://api.stripe.com/v2
